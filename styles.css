@@ -1,0 +1,94 @@
+body { 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-image: url("ron-westerwell-jNYAp3Bz4rY-unsplash.jpg");
+}
+
+h3 {
+    padding: 10px
+}
+
+input[type=text] {
+    padding:10px;
+    margin:10px 0; 
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input[type=radio] {
+    
+    margin: 10px;
+}
+
+label { 
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+    animation: flicker 1.5s infinite alternate;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 80px #0fa,
+                0 0 90px #0fa,
+                0 0 100px #0fa,
+                inset 0 0 75px #0fa;
+    padding: 100px;
+    border-radius: 15px;
+    
+    background-color: black;
+}
+
+form {
+    
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    /* text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa; */
+}
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }
+  
+  }
+

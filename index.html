@@ -2,18 +2,39 @@
 
 <head>
 	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="app.js"></script>
+	<title>
+		Search Engine Page
+	</title>
 </head>
 
 <body>
+<!-- action="https://handlers.education.launchcode.org/request-parrot" -->
+<div class="form">
+	<form id="searchForm" method="GET">
+    	<!-- TODO: add form elements -->
+		<h3 class="neonText">What would you like to search?</h3>
+		<input id="query" type="text" name="q" placeholder="Search">
+		<h3 class="neonText">Which search engine would you like to use?</h3>	
+			<label>Google <input type="radio" name="engine" value="google"/></label>
+			<label>DuckDuckGo <input type="radio" name="engine" value="duckduckgo"/></label>
+			<label>Bing <input type="radio" name="engine" value="bing"/></label>
+			<label>Ask <input type="radio" name="engine" value="ask"></label>
+		<button>Go!</button>
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
 	</form>
-
+</div>
 </body>
+
+<!-- 
+
+Search Engine Options 
+Label 				Value 					Search URL
+Google 				google 					https://www.google.com/search --- https://www.google.com/search + 
+DuckDuckGo 			duckDuckGo 				https://duckduckgo.com/
+Bing 				bing 					https://www.bing.com/search
+Ask 				ask 					https://www.ask.com/web
+
+
+ -->
