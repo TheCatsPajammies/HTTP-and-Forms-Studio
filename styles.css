@@ -1,3 +1,8 @@
+/*
+Neon styles credit:
+https://css-tricks.com/how-to-create-neon-text-with-css/
+*/
+
 body { 
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -6,11 +11,13 @@ body {
 }
 
 h3 {
-    padding: 10px
+    padding: 10px;
+    font-family: "Yellowtail", sans-serif;
+    font-size: xx-large;
 }
 
 input[type=text] {
-    padding:10px;
+    padding:5px;
     margin:10px 0; 
     border-radius: 10px;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
@@ -24,6 +31,7 @@ input[type=radio] {
 label { 
     display: block; 
     margin-bottom: 10px;
+    font-family: sans-serif;
 }
 
 .form {
