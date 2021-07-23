@@ -30,7 +30,8 @@ window.addEventListener("load", function(){
         let searchQuery = document.getElementById('query').value;
         let searchEngineChoice = document.querySelector('input[name=engine]:checked').value;
         let submissionForm = document.getElementById("searchForm");
-        
+        //let formAction = `${actions[searchEngineChoice]}${searchQuery}`;
+        //submissionForm.action = formAction;
         submissionForm.setAttribute("action", `${actions[searchEngineChoice]}${searchQuery}`);
         console.log(submissionForm);
     })
